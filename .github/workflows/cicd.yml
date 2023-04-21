@@ -1,10 +1,5 @@
-name: DNI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+name: cdicd
+on: [push]
 
 jobs:
   ci:
@@ -15,7 +10,7 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v1
         env:
-          TEST_NAME: dniTest
+          TEST_NAME: cdicd Test
         with:
           configuration: test/phpunit.xml
           args: --coverage-text
