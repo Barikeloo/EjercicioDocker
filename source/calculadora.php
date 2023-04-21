@@ -1,5 +1,5 @@
 <?php
-    class calculadora
+    class Calculadora
     {
         private $num1;
         private $num2;
