@@ -1,8 +1,5 @@
 name: For every push
-on:
-pull_request:
-  branches:
-    - '*'
+on: [push, issues]
 jobs:
   say-hello:
     runs-on: ubuntu-latest
